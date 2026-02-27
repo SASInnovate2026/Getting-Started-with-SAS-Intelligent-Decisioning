@@ -9,23 +9,23 @@
 * [Exercise Completed](#exercise-completed)
 
 ## Exercise Description
+In this hands-on exercise, you'll learn how to create a simple decision step-by-step. You will use the SAS Intelligent Decisioning interface to create rule sets and other decision elements, arrange decision objects in a workflow, and test the completed decisions for accuracy.
 
-Are you interested in using SAS Viya to automate your business decisions and drive real-time customer interactions, but don't know where to begin? In this hands-on workshop, you'll learn how to create a decision step-by-step. Use the SAS Intelligent Decisioning interface to create rule sets and other decision elements, arrange decision objects in a workflow, and test completed decisions for accuracy.
+<br>
 
 ## Log in to SAS Viya
-
-Open a new window in the *Google Chrome* browser and select the **SAS Viya** bookmark.
+Open a new window in the *Google Chrome* browser and select the **SASLanding** bookmark.
 
 * ID: **student**
 * Password: **Metadata0**
 
 Select **No** when prompted about accepting *Admin* privileges.
 
-## Load CAS Data In-Memory
+<br>
 
+## Load CAS Data In-Memory
 1. Select ![Viya Menu Selector](images/HamburgerMenu.png) **&#10132; Manage Data** to open *SAS Data Explorer*.
-1. Expand the **cas-shared-default** server to view the listing of CAS libraries.
-1. Select the **DM** CAS library to view its contents.
+1. ***Import***
 1. Select the **LOAN_APPLICANTS.csv** table and click ![Lightning Bolt icon](images/LightningBolt.png) to load the table into memory.
 
    ![SAS Data Explorer](images/DataExplorer.png)
@@ -141,7 +141,6 @@ Select **No** when prompted about accepting *Admin* privileges.
 
      > &#9755; Hover over the *OR* statement to surface statement options, then click ![Add/Plus](images/AddPlus.png) to add the *AND* statement.
 
-
    ![Initial loan review - add offer rate](images/InitialLoanReview3.png)
 
 1. Click **+ Add Rule** to add a new rule block.
@@ -196,8 +195,9 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. Click **x** to close the test results and the rule set.
 
-## Create and Test a DS2 Code File
+<br>
 
+## Create and Test a DS2 Code File
 1. Select ![Code File Icon](images/CodeFileIcon.png) to open the **Code files** page.
 1. Click **New code file** to create a new code file.
 1. Enter the following information:
@@ -286,8 +286,9 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. Click **x** to close the test results and the code file.
 
-## Create and Test a Decision
+<br>
 
+## Create and Test a Decision
 1. Select ![Decision icon](images/DecisionIcon.png) to open the **Decisions** page.
 1. Click **New decision** to create a new decision.
 1. Enter the following information for the new decision:
@@ -384,10 +385,15 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![Decision test output](images/DecisionTestOutput.png)
 
+1. ***View results in VA***
+1.
 1. Click **x** to close the test results and the rule set.
+
+<br>
 
 ## Exercise Completed
 
-**You have completed the exercise on getting started with SAS Intelligent Decisioning!**
+You have completed the exercise for **Getting Started with SAS Intelligent Decisioning**.
 
-**THANK YOU FOR ATTENDING THIS WORKSHOP!**
+**THANK YOU FOR ATTENDING THIS SESSION!** <br>
+**PLEASE COMPLETE THE EVALUATION!**

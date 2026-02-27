@@ -25,11 +25,21 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 ## Load CAS Data In-Memory
 1. Select ![Viya Menu Selector](images/HamburgerMenu.png) **&#10132; Manage Data** to open *SAS Data Explorer*.
-1. ***Import***
-1. Select the **LOAN_APPLICANTS.csv** table and click ![Lightning Bolt icon](images/LightningBolt.png) to load the table into memory.
+1. Select the **Import** tab.
+1. Select **Local Files** to import a file.
 
    ![SAS Data Explorer](images/DataExplorer.png)
 
+1. Navigate to **workshop (\\server.demo.sas.com) (W:) &#10132; SID**
+1. Select the **LOAN_APPLICANTS.csv** file and click **Open**.
+
+   ![Import File](images/SelectImportFile.png)
+
+1. The default options are fine, so click **Import Item** to import the data from the file to a table in the *Public* CAS library.
+
+   ![Import Item](images/ImportItem.png)
+
+1. Select the **Sources** tab.
 1. Select the **In-memory data (available)** source to confirm the **LOAN_APPLICANTS** table is now listed there.
 
    ![In-memory Data](images/InMemoryData.png)
@@ -39,6 +49,8 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Click the **x** in the right-corner of the window to close the table.
 
    ![Sample data](images/SampleData.png)
+
+<br>
 
 ## Create and Test an Assignment Rule Set
 

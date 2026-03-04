@@ -2,7 +2,7 @@
 
 * [Exercise Description](#exercise-description)
 * [Log in to SAS Viya](#log-in-to-sas-viya)
-* [Load CAS Data In-Memory](#load-cas-data-in-memory)
+* [Load Data to CAS In-Memory](#load-data-to-cas-in-memory)
 * [Create and Test an Assignment Rule Set](#create-and-test-an-assignment-rule-set)
 * [Create and Test a DS2 Code File](#create-and-test-a-ds2-code-file)
 * [Create and Test a Decision](#create-and-test-a-decision)
@@ -23,7 +23,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 <br>
 
-## Load CAS Data In-Memory
+## Load Data to CAS In-Memory
 1. Select ![Viya Menu Selector](images/HamburgerMenu.png) **&#10132; Manage Data** to open *SAS Data Explorer*.
 1. Select the **Import** tab.
 1. Select **Local Files** to import a file.
@@ -53,7 +53,6 @@ Select **No** when prompted about accepting *Admin* privileges.
 <br>
 
 ## Create and Test an Assignment Rule Set
-
 1. Select ![Viya Menu Selector](images/HamburgerMenu.png) **&#10132; Build Decisions** to open *SAS Intelligent Decisioning*.
 1. Select ![Rule Sets Icon](images/RuleSetsIcon.png) to open the **Rule sets** page.
 1. Click **New rule set** to create a new rule set.
@@ -64,9 +63,7 @@ Select **No** when prompted about accepting *Admin* privileges.
     * Name: **Initial_Loan_Review**
     * Type: **Assignment**
     * Description: **Initial Loan Review Assignment Rule**
-    * Location: **/Public/SID Workshop**
-
-        > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to *SAS Content/Public*, then select ![New](images/New.png) **&#10132; Folder** to create a new folder named *SID Workshop* if the workshop folder does not already exist.
+    * Location: **/Public**
 
         ![Initial_Loan_Review settings](images/Initial_Loan_ReviewSettings.png)
 
@@ -106,12 +103,12 @@ Select **No** when prompted about accepting *Admin* privileges.
 
      ![Add custom variable](images/AddCustomVariable.png)
 
-1. Repeat steps 13-15 to add the following additional output custom variables:
+1. Repeat steps 14-16 to add the following additional output custom variables:
 
-| Name | Data type | Input | Output | Length | Initial Value | Description |
-|  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
-| JUSTIFICATION  | Character |       | checked | 50 | UNDER REVIEW | Justification for Loan Approval Status |
-| OFFER_RATE | Decimal |       | checked |       |       | Interest Rate to Offer with Loan Approval |
+   | Name | Data type | Input | Output | Length | Initial Value | Description |
+   |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
+   | JUSTIFICATION  | Character |       | checked | 50 | UNDER REVIEW | Justification for Loan Approval Status |
+   | OFFER_RATE | Decimal |       | checked |       |       | Interest Rate to Offer with Loan Approval |
 
    ![Additional custom variables](images/AdditionalCustomVariables.png)
 
@@ -205,7 +202,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![Test output](images/TestOutput.png)
 
-1. Click **x** to close the test results and the rule set.
+1. Click **x** to close the test results, test, and the rule set.
 
 <br>
 
@@ -296,7 +293,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![DS2 test output](images/DS2TestOutput.png)
 
-1. Click **x** to close the test results and the code file.
+1. Click **x** to close the test results, test, and the code file.
 
 <br>
 
@@ -398,8 +395,8 @@ Select **No** when prompted about accepting *Admin* privileges.
    ![Decision test output](images/DecisionTestOutput.png)
 
 1. ***View results in VA***
-1.
-1. Click **x** to close the test results and the rule set.
+1. x
+1. Click **x** to close the test results, test, and the decision.
 
 <br>
 

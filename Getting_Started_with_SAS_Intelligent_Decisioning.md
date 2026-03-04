@@ -231,25 +231,26 @@ Select **No** when prompted about accepting *Admin* privileges.
                       in_out varchar JUSTIFICATION,
                       in_out varchar STATUS);
 
-         if STATUS == 'REVIEW' then
-         do;
-            if CREDIT_SCORE > 650 AND LOAN < INCOME then
-                do;
-                   STATUS = 'APPROVED';
-                   JUSTIFICATION = 'APPROVED BASED ON CREDIT SCORE';
-                   OFFER_RATE = 5.5;
-                end;
-            else if (CREDIT_SCORE >= 525 AND CREDIT_SCORE <= 650) AND LOAN  < 0.7 * INCOME then
-                do;
-                   STATUS = 'APPROVED';
-                   JUSTIFICATION = 'APPROVED BASED ON CREDIT SCORE';
-                   OFFER_RATE = 10.75;
-               end;
-            else
-               do;
-                   STATUS = 'DENIED';
-                   JUSTIFICATION = 'DENIED BASED ON CREDIT SCORE AND/OR LOAN AMOUNT';
-               end;
+            if STATUS == 'REVIEW' then
+            do;
+               if CREDIT_SCORE > 650 AND LOAN < INCOME then
+                  do;
+                     STATUS = 'APPROVED';
+                     JUSTIFICATION = 'APPROVED BASED ON CREDIT SCORE';
+                     OFFER_RATE = 5.5;
+                  end;
+               else if (CREDIT_SCORE >= 525 AND CREDIT_SCORE <= 650) AND LOAN  < 0.7 * INCOME then
+                  do;
+                     STATUS = 'APPROVED';
+                     JUSTIFICATION = 'APPROVED BASED ON CREDIT SCORE';
+                     OFFER_RATE = 10.75;
+                  end;
+               else
+                  do;
+                     STATUS = 'DENIED';
+                     JUSTIFICATION = 'DENIED BASED ON CREDIT SCORE AND/OR LOAN AMOUNT';
+                  end;
+            end;
        end;
     endpackage;
     ```

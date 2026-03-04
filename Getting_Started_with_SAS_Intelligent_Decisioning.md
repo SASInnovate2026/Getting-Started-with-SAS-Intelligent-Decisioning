@@ -245,7 +245,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. Click ![Save button](images/SaveButton.png) to save the code file.
 
-     ![DS2 Code 2 - copy/paste](images/DS2Code2.png)
+      ![Pasted DS2 Code](images/DS2CodePasted.png)
 
 1. Click **Sync variables** to add the variables declared in the DS2 code to the *Variables* tab for for the code file.
 1. Select the **Variables** tab to confirm the variables were added.

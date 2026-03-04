@@ -128,16 +128,18 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![Initial loan review - assign status](images/InitialLoanReview1.png)
 
-1. Name the rule **Automatic Loan Denial or Approval**.
+1. Select ![More options](images/MoreOptions.png) **&#10132; Edit rule information** and name the rule **Automatic Loan Denial or Approval**.
 
-   > &#9755; Select ![More options](images/MoreOptions.png) **&#10132; Edit rule information**.
+1. Click **Save** to save the rule name.
+
+   > &#9755; .
 
 1. Select the following for the rule:<br>
    **IF BAD = 1**<br>
    **THEN ASSIGN STATUS 'DENIED'** <br>
     **&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ASSIGN JUSTIFICATION 'AUTOMATIC DENIAL CRITERIA MET'**
 
-    > &#9755; Hover over the first *ASSIGN* statement to surface statement options, then click ![Add/Plus](images/AddPlus.png) to add the second *ASSIGN* statement.
+    > &#9755; Hover over the first *ASSIGN STATUS 'DENIED'* statement to surface statement options, then click ![Add/Plus](images/AddPlus.png) to add the second *ASSIGN* statement.
 
      ![Initial loan review - automatic denial](images/InitialLoanReview2.png)
 
@@ -152,6 +154,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![Initial loan review - add offer rate](images/InitialLoanReview3.png)
 
+1. Click ![Save button](images/SaveButton.png) to save the rule set.
 1. Click **+ Add Rule** to add a new rule block.
 1. Change the **IF** to an **ELSE** to add an *ELSE IF* condition to the existing rule block.
 1. Select the following for the *ELSE* condition: <br>
@@ -172,8 +175,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Enter the following information:
    * Name: **Initial_Loan_Review_Test**
    * Description: **Test 1**
-   * Location: **/Public/SID Workshop/Tests**
-      > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to *SAS Content/SID Workshop*, then select ![New](images/New.png) **&#10132; Folder** to create a new folder named *Tests* if the test folder does not exist already.
+   * Location: **/Public**
    * Input table: **LOAN_APPLICANTS**.
 
    ![Test rule set](images/TestRuleSet.png)
@@ -229,6 +231,8 @@ Select **No** when prompted about accepting *Admin* privileges.
                       in_out varchar JUSTIFICATION,
                       in_out varchar STATUS);
 
+         if STATUS == 'REVIEW' then
+         do;
             if CREDIT_SCORE > 650 AND LOAN < INCOME then
                 do;
                    STATUS = 'APPROVED';
@@ -303,7 +307,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Enter the following information for the new decision:
    * Name: **Loan_Request_Review**
    * Description: **Loan request review process for ABC Bank.**
-   * Location: **/Public/SID Workshop**
+   * Location: **/Public**
 
      > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to this folder in *SAS Content*.
 
@@ -334,35 +338,11 @@ Select **No** when prompted about accepting *Admin* privileges.
      ![Decision variables](images/DecisionVars.png)
 
 1. Select the **Decision Flow** tab.
-1. On the *Initial_Loan_Review* node, select ![More options](images/MoreOptions.png) **&#10132; Add &#10132; Branch**.
-
-     ![Add branch](images/AddBranch.png)
-
-1. Enter the name **Loan Status** and select **Equals** for the branch type.
-
-     ![New branch](images/NewBranch.png)
-
-1. Click **OK** to create the branch.
-1. In the *Properties* section, select the **STATUS** variable for the *Branch expression*.
-
-     > &#9755; Select the drop-down menu under *Branch expression* to view the full list of variables.
-
-1. Click ![Add/Plus](images/AddPlus.png) to add the following *paths*:
-   * **"REVIEW"**
-   * **"APPROVED"**
-   * **"DENIED"**.
-
-    > &#9998; The *Other* path is automatically added for this branch type.
-
-1. Click ![Save button](images/SaveButton.png) to save the decision.
-
-     ![Branches](images/Branches.png)
-
-1. Right-click the path with the *"REVIEW"* branch and select **&#10132; Add &#10132; DS2 code file**.
+1. On the *Initial_Loan_Review* node, select ![More options](images/MoreOptions.png) **&#10132; Add &#10132; DS2 code file**.
 
    ![Add DS2](images/AddDS2.png)
 
-1. Navigate to the **SAS Content &#10132; Public &#10132; SID Workshop** folder.
+1. Navigate to the **SAS Content &#10132; Public** folder.
 1. Select the **Additional_Review** DS2 code file and click **OK** to add the selected file to the decision.
 
      ![Select DS2](images/SelectDS2.png)

@@ -145,17 +145,6 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. Click ![Save button](images/SaveButton.png) to save the rule set.
 1. Click **+ Add Rule** to add a new rule block.
-1. Use the drop-down menu to change the **IF** to an **OR** to add an *OR* condition to the existing rule block.
-1. Select the following for the *OR* condition:<br>
-   **OR DEBTINC > 50.0** <br>
-   **AND DEROG >= 2**
-
-     > &#9755; Hover over the *OR* statement to surface statement options, then click ![Add/Plus](images/AddPlus.png) to add the *AND* statement.
-
-   ![Initial loan review - add offer rate](images/InitialLoanReview3.png)
-
-1. Click ![Save button](images/SaveButton.png) to save the rule set.
-1. Click **+ Add Rule** to add a new rule block.
 1. Change the **IF** to an **ELSE** to add an *ELSE IF* condition to the existing rule block.
 1. Select the following for the *ELSE* condition: <br>
    **ELSE BAD = 0** <br>

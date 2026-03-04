@@ -152,7 +152,7 @@ Select **No** when prompted about accepting *Admin* privileges.
    **AND DEBTINC < 10.0** <br>
    **THEN ASSIGN STATUS 'APPROVED'** <br>
    **&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ASSIGN JUSTIFICATION 'AUTOMATIC APPROVAL CRITERIA MET'** <br>
-   **&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ASSIGN OFFER_RATE 2.75**
+   **&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ASSIGN OFFER_RATE 5.25**
 
    > &#9755; Click ![Add/Plus](images/AddPlus.png) to add the *AND* statements and additional *ASSIGN* statements.
 
@@ -232,7 +232,7 @@ Select **No** when prompted about accepting *Admin* privileges.
                   do;
                      STATUS = 'APPROVED';
                      JUSTIFICATION = 'APPROVED BASED ON CREDIT SCORE';
-                     OFFER_RATE = 10.75;
+                     OFFER_RATE = 9.75;
                   end;
                else
                   do;

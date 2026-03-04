@@ -30,7 +30,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![SAS Data Explorer](images/DataExplorer.png)
 
-1. Navigate to **workshop (\\server.demo.sas.com) (W:) &#10132; SID**
+1. Navigate to **workshop (\\\server.demo.sas.com) (W:) &#10132; SID**
 1. Select the **LOAN_APPLICANTS.csv** file and click **Open**.
 
    ![Import File](images/SelectImportFile.png)
@@ -131,9 +131,6 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Select ![More options](images/MoreOptions.png) **&#10132; Edit rule information** and name the rule **Automatic Loan Denial or Approval**.
 
 1. Click **Save** to save the rule name.
-
-   > &#9755; .
-
 1. Select the following for the rule:<br>
    **IF BAD = 1**<br>
    **THEN ASSIGN STATUS 'DENIED'** <br>
@@ -167,6 +164,8 @@ Select **No** when prompted about accepting *Admin* privileges.
    * Location: **/Public**
    * Input table: **LOAN_APPLICANTS**.
 
+     > &#9998; Click ![Folder icon](images/FolderIcon.png) to select the *Input table*.
+
    ![Test rule set](images/TestRuleSet.png)
 
 1. Click **Variables** to view the variables mapping between the input table and the rule set variables.
@@ -185,7 +184,7 @@ Select **No** when prompted about accepting *Admin* privileges.
      > &#9998; It may take a few seconds for the test to complete.  You can select ![Refresh](images/Refresh.png) to refresh the test status.
 
 1. Once the test run is complete, select ![Result table](images/ResultTable.png) to view the test results.
-1. Click **Rule-Fired Analysis** and **Run Rule-Fired Analysis** to view which records triggered a rule.
+1. Click **Rule-Fired Analysis** and then **Run Rule-Fired Analysis** to view which records triggered a rule.
 
    ![Rule-fired analysis](images/RuleFiredAnalysis.png)
 
@@ -204,7 +203,7 @@ Select **No** when prompted about accepting *Admin* privileges.
     * Name: **Additional_Review**
     * Type: **DS2 Code File** (default selection)
     * Description: **Additional review for requests that have not been approved or denied**
-    * Location: **/Public/SID Workshop**
+    * Location: **/Public**
 
      ![DS2 code 1 - settings](images/DS2Code1.png)
 
@@ -257,7 +256,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Enter the following information:
    * Name: **Additional_Review_Test**
    * Description: **Test 1**
-   * Location: **/Public/SID Workshop/Tests**
+   * Location: **/Public**
       > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to *SAS Content/SID Workshop/Tests*.
    * Input table: **LOAN_APPLICANTS**.
 
@@ -308,7 +307,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
      ![Add rule set](images/AddRuleSet.png)
 
-1. Navigate to the **SAS Content &#10132; Public &#10132; SID Workshop** folder.
+1. Navigate to the **SAS Content &#10132; Public** folder.
 1. Select the **Initial_Loan_Review** rule set.
 
      ![Select Initial_Loan_Review](images/SelectInitialLoanReview.png)
@@ -351,7 +350,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Enter the following information:
    * Name: **Loan_Request_Review_Test**
    * Description: **Test 1**
-   * Location: **/Public/SID Workshop/Tests**
+   * Location: **/Public**
       > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to *SAS Content/SID Workshop/Tests*.
    * Input table: **LOAN_APPLICANTS**.
 

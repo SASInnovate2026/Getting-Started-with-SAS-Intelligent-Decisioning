@@ -291,7 +291,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 <br>
 
 ## Create and Test a Decision
-1. Select ![Decision icon](images/DecisionIcon.png) to open the **Decisions** page.
+1. Select ![Decisions icon](images/DecisionIcon.png) to open the **Decisions** page.
 1. Click **New decision** to create a new decision.
 1. Enter the following information for the new decision:
    * Name: **Loan_Request_Review**

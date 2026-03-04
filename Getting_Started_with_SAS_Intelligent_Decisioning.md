@@ -192,12 +192,12 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![Test output](images/TestOutput.png)
 
-1. Click **x** to close the test results, test, and the rule set.
+1. Click **x** to close the test and the rule set.
 
 <br>
 
 ## Create and Test a DS2 Code File
-1. Select ![Code File Icon](images/CodeFileIcon.png) to open the **Code files** page.
+1. Select ![Code Files Icon](images/CodeFileIcon.png) to open the **Code files** page.
 1. Click **New code file** to create a new code file.
 1. Enter the following information:
     * Name: **Additional_Review**
@@ -219,7 +219,7 @@ Select **No** when prompted about accepting *Admin* privileges.
                       in_out varchar JUSTIFICATION,
                       in_out varchar STATUS);
 
-            if STATUS == 'REVIEW' then
+            if STATUS = 'REVIEW' then
             do;
                if CREDIT_SCORE > 650 AND LOAN < INCOME then
                   do;
@@ -243,9 +243,10 @@ Select **No** when prompted about accepting *Admin* privileges.
     endpackage;
     ```
 
+1. Click ![Save button](images/SaveButton.png) to save the code file.
+
      ![DS2 Code 2 - copy/paste](images/DS2Code2.png)
 
-1. Click ![Save button](images/SaveButton.png) to save the code file.
 1. Click **Sync variables** to add the variables declared in the DS2 code to the *Variables* tab for for the code file.
 1. Select the **Variables** tab to confirm the variables were added.
 
@@ -257,7 +258,6 @@ Select **No** when prompted about accepting *Admin* privileges.
    * Name: **Additional_Review_Test**
    * Description: **Test 1**
    * Location: **/Public**
-      > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to *SAS Content/SID Workshop/Tests*.
    * Input table: **LOAN_APPLICANTS**.
 
    ![Test DS2 code](images/TestDS2Code.png)
@@ -286,7 +286,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![DS2 test output](images/DS2TestOutput.png)
 
-1. Click **x** to close the test results, test, and the code file.
+1. Click **x** to close the test and the code file.
 
 <br>
 
@@ -365,7 +365,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. ***View results in VA***
 1. x
-1. Click **x** to close the test results, test, and the decision.
+1. Click **x** to close the test and the decision.
 
 <br>
 

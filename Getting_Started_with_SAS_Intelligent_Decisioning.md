@@ -184,7 +184,7 @@ Select **No** when prompted about accepting *Admin* privileges.
      > &#9998; It may take a few seconds for the test to complete.  You can select ![Refresh](images/Refresh.png) to refresh the test status.
 
 1. Once the test run is complete, select ![Result table](images/ResultTable.png) to view the test results.
-1. Click **Rule-Fired Analysis** and then **Run Rule-Fired Analysis** to view which records triggered a rule.
+1. Select **Rule-Fired Analysis** and then click **Run Rule-Fired Analysis** to view which records triggered a rule.
 
    ![Rule-fired analysis](images/RuleFiredAnalysis.png)
 

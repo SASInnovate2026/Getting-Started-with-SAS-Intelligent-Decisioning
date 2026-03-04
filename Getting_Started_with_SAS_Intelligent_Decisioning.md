@@ -192,7 +192,8 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![Test output](images/TestOutput.png)
 
-1. Click **x** to close the test and the rule set.
+1. Click **x** close the test.
+1. Click **x** to close the rule set.
 
 <br>
 
@@ -286,7 +287,8 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![DS2 test output](images/DS2TestOutput.png)
 
-1. Click **x** to close the test and the code file.
+1. Click **x** close the test.
+1. Click **x** to close the code file.
 
 <br>
 
@@ -334,9 +336,9 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Navigate to the **SAS Content &#10132; Public** folder.
 1. Select the **Additional_Review** DS2 code file and click **OK** to add the selected file to the decision.
 
-     ![Select DS2](images/SelectDS2.png)
+     ![Select DS2](images/SelectedDS2.png)
 
-1. Click **Save** to save the decision.
+1. Click ![Save button](images/SaveButton.png) to save the decision.
 1. Click **Validate** to validate the decision.
 
    ![Validate](images/Validate.png)
@@ -351,7 +353,6 @@ Select **No** when prompted about accepting *Admin* privileges.
    * Name: **Loan_Request_Review_Test**
    * Description: **Test 1**
    * Location: **/Public**
-      > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to *SAS Content/SID Workshop/Tests*.
    * Input table: **LOAN_APPLICANTS**.
 
    ![Test Decision](images/TestDecision.png)
@@ -360,17 +361,26 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Check the newly created test and click **Run** to run the specified test.
 1. Once the test run is complete, select ![Result table](images/ResultTable.png) to view the test results.
 1. Review the results on the *Output* tab.
+1. Select **Actions &#10132; Explore and Visualize** to open the output table in *SAS Visual Analytics*.
 
    ![Decision test output](images/DecisionTestOutput.png)
 
-1. ***View results in VA***
-1. x
-1. Click **x** to close the test and the decision.
+1. Double-click the **STATUS** category to add its values to the report template.
+1. Review the resulting bar chart.
+
+   ![VA Report for Status](images/VAStatusBar.png)
+
+   > &#9755; Select each bar on the report to view the number of records for each status.
+
+1. Select **Opened reports &#10132; Close all reports**.
+1. Click **Don't save** on the warning dialog.
+1. Select ![Viya Menu Selector](images/HamburgerMenu.png) **&#10132; Build Decisions** to navigate back to *SAS Intelligent Decisioning*.
+1. Click **x** close the test.
+1. Click **x** to close the decision.
 
 <br>
 
 ## Exercise Completed
-
 You have completed the exercise for **Getting Started with SAS Intelligent Decisioning**.
 
 **THANK YOU FOR ATTENDING THIS SESSION!** <br>

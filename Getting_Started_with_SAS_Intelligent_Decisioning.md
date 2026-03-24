@@ -73,7 +73,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
     > &#9998; The variables are automatically added as both *Input* and *Output* variables. You can uncheck those selections as appropriate for your rule set.
 
-1. To import some output custom variables, select *xxx &#10132; xxx**.
+1. To import some custom output variables, select *xxx &#10132; xxx**.
 
 ***import custom variables from CSV
 
@@ -89,8 +89,11 @@ Select **No** when prompted about accepting *Admin* privileges.
    ![Add assignment](images/AddAssignment.png)
 
 1. For the action assignment, select **ASSIGN STATUS 'REVIEW'**.
+1. Click ![Save button](images/SaveButton.png) to save the rule set.
 
-***copy from rule set
+***pic
+
+***add common rule set
 
 
    ![Initial loan review - automatic approval](images/InitialLoanReview4.png)
@@ -166,13 +169,13 @@ Select **No** when prompted about accepting *Admin* privileges.
                   do;
                      STATUS = 'APPROVED';
                      JUSTIFICATION = 'APPROVED BASED ON CREDIT SCORE';
-                     OFFER_RATE = 5.5;
+                     OFFER_RATE = 5.75;
                   end;
                else if (CREDIT_SCORE >= 525 AND CREDIT_SCORE <= 650) AND LOAN  < 0.7 * INCOME then
                   do;
                      STATUS = 'APPROVED';
                      JUSTIFICATION = 'APPROVED BASED ON CREDIT SCORE';
-                     OFFER_RATE = 9.75;
+                     OFFER_RATE = 7.5;
                   end;
                else
                   do;
@@ -185,6 +188,8 @@ Select **No** when prompted about accepting *Admin* privileges.
     ```
 
 1. Click ![Save button](images/SaveButton.png) to save the code file.
+
+***update pic
 
       ![Pasted DS2 Code](images/DS2CodePasted.png)
 
@@ -224,6 +229,8 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. Once the test run is complete, select ![Result table](images/ResultTable.png) to view the test results.
 1. Review the results on the *Output* tab.
+
+***update pic
 
    ![DS2 test output](images/DS2TestOutput.png)
 
@@ -303,10 +310,14 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Review the results on the *Output* tab.
 1. Select **Actions &#10132; Explore and Visualize** to open the output table in *SAS Visual Analytics*.
 
+***update pic
+
    ![Decision test output](images/DecisionTestOutput.png)
 
 1. Double-click the **STATUS** category to add its values to the report template.
 1. Review the resulting bar chart.
+
+***update pic
 
    ![VA Report for Status](images/VAStatusBar.png)
 

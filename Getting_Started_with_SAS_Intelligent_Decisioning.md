@@ -2,7 +2,7 @@
 
 * [Exercise Description](#exercise-description)
 * [Log in to SAS Viya](#log-in-to-sas-viya)
-* [Load Data to CAS In-Memory](#load-data-to-cas-in-memory)
+* [View the Test Data](#view-the-test-data)
 * [Create and Test an Assignment Rule Set](#create-and-test-an-assignment-rule-set)
 * [Create and Test a DS2 Code File](#create-and-test-a-ds2-code-file)
 * [Create and Test a Decision](#create-and-test-a-decision)
@@ -23,28 +23,13 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 <br>
 
-## Load Data to CAS In-Memory
+## View the Test Data
 1. Select ![Viya Menu Selector](images/HamburgerMenu.png) **&#10132; Manage Data** to open *SAS Data Explorer*.
-1. Select the **Import** tab.
-1. Select **Local Files** to import a file.
-
-   ![SAS Data Explorer](images/DataExplorer.png)
-
-1. Navigate to **workshop (\\\server.demo.sas.com) (W:) &#10132; SID**
-1. Select the **LOAN_APPLICANTS.csv** file and click **Open**.
-
-   ![Import File](images/SelectImportFile.png)
-
-1. The default options are fine, so click **Import Item** to import the data from the file to a table in the *Public* CAS library.
-
-   ![Import Item](images/ImportItem.png)
-
-1. Select the **Sources** tab.
-1. Select the **In-memory data (available)** source to confirm the **LOAN_APPLICANTS** table is now listed there.
+1. Select the **In-memory data (available)** source to confirm the **LOAN_APPLICANTS** table is listed there.
 
    ![In-memory Data](images/InMemoryData.png)
 
-1. Select the **LOAN_APPLICANTS** table hyperlink to view its *Details*.
+1. Select the **LOAN_APPLICANTS** table hyperlink to view its *Details* information.
 1. Select the **Sample data** tab to view a sample of the data set.
 1. Click the **x** in the right-corner of the window to close the table.
 
@@ -88,31 +73,11 @@ Select **No** when prompted about accepting *Admin* privileges.
 
     > &#9998; The variables are automatically added as both *Input* and *Output* variables. You can uncheck those selections as appropriate for your rule set.
 
-1. To add some output custom variables, select **Add variable &#10132; Custom variable**.
-1. Expand the **Optional** section.
-1. Enter the following:
-   * Name: **STATUS**
-   * Data type: **Character**
-   * Description: **Loan Status**
-   * Length: **8**
+1. To import some output custom variables, select *xxx &#10132; xxx**.
 
-   ![Custom variable settings](images/CustomVariableSetttings.png)
+***import custom variables from CSV
 
-1. Click **Add**.
-1. Uncheck **Input**.
 
-     ![Add custom variable](images/AddCustomVariable.png)
-
-1. Repeat steps 14-16 to add the following additional output custom variables:
-
-   | Name | Data type | Input | Output | Length | Initial Value | Description |
-   |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
-   | JUSTIFICATION  | Character |       | checked | 50 | UNDER REVIEW | Justification for Loan Approval Status |
-   | OFFER_RATE | Decimal |       | checked |       |       | Interest Rate to Offer with Loan Approval |
-
-   ![Additional custom variables](images/AdditionalCustomVariables.png)
-
-1. Click **OK** to add the custom variables to the rule set.
 1. Click ![Save button](images/SaveButton.png) to save the rule set.
 
     ![Updated variables](images/UpdatedVariables.png)
@@ -124,34 +89,9 @@ Select **No** when prompted about accepting *Admin* privileges.
    ![Add assignment](images/AddAssignment.png)
 
 1. For the action assignment, select **ASSIGN STATUS 'REVIEW'**.
-1. Click **+ Add Rule** to add a rule block.
 
-   ![Initial loan review - assign status](images/InitialLoanReview1.png)
+***copy from rule set
 
-1. Select ![More options](images/MoreOptions.png) **&#10132; Edit rule information** and name the rule **Automatic Loan Denial or Approval**.
-
-1. Click **Save** to save the rule name.
-1. Select the following for the rule:<br>
-   **IF BAD = 1**<br>
-   **THEN ASSIGN STATUS 'DENIED'** <br>
-    **&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ASSIGN JUSTIFICATION 'AUTOMATIC DENIAL CRITERIA MET'**
-
-    > &#9755; Hover over the first *ASSIGN STATUS 'DENIED'* statement to surface statement options, then click ![Add/Plus](images/AddPlus.png) to add the second *ASSIGN* statement.
-
-     ![Initial loan review - automatic denial](images/InitialLoanReview2.png)
-
-1. Click ![Save button](images/SaveButton.png) to save the rule set.
-1. Click **+ Add Rule** to add a new rule block.
-1. Change the **IF** to an **ELSE** to add an *ELSE IF* condition to the existing rule block.
-1. Select the following for the *ELSE* condition: <br>
-   **ELSE BAD = 0** <br>
-   **AND LOAN <= 15000** <br>
-   **AND DEBTINC < 10.0** <br>
-   **THEN ASSIGN STATUS 'APPROVED'** <br>
-   **&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ASSIGN JUSTIFICATION 'AUTOMATIC APPROVAL CRITERIA MET'** <br>
-   **&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ASSIGN OFFER_RATE 5.25**
-
-   > &#9755; Click ![Add/Plus](images/AddPlus.png) to add the *AND* statements and additional *ASSIGN* statements.
 
    ![Initial loan review - automatic approval](images/InitialLoanReview4.png)
 

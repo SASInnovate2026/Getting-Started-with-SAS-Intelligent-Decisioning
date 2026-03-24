@@ -47,8 +47,10 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Enter the following information for the new rule set:
     * Name: **Initial_Loan_Review**
     * Type: **Assignment**
-    * Description: **Initial Loan Review Assignment Rule**
+    * Description: **Initial Loan Review Rule Set**
     * Location: **/Public**
+
+      > &#9998; Select ![Folder icon](images/FolderIcon.png) and navigate to **SAS Content &#10132; Public**.
 
         ![Initial_Loan_Review settings](images/Initial_Loan_ReviewSettings.png)
 
@@ -73,14 +75,23 @@ Select **No** when prompted about accepting *Admin* privileges.
 
     > &#9998; The variables are automatically added as both *Input* and *Output* variables. You can uncheck those selections as appropriate for your rule set.
 
-1. To import some custom output variables, select *xxx &#10132; xxx**.
+1. To import some custom output variables, select **Import &#10132; Comma-delimited(*.csv)**.
 
-***import custom variables from CSV
+   ![Import Variables from CSV](images/ImportVariablesCSV.png)
 
+1. Select ![Folder icon](images/FolderIcon.png) in the **Name** selection.
+1. Navigate to **workshop (\\\server.demo.sas.com) (W:)\SID**.
+1. Select **CustomVariables.csv** and click **Open**.
+
+   ![Select Import Variables CSV File](images/SelectImportVarFile.png)
+
+1. Click **Import** to import the variables from the selected CSV file.
+
+   ![Import Variables from File ](images/ImportVarsFromFile.png)
 
 1. Click ![Save button](images/SaveButton.png) to save the rule set.
 
-    ![Updated variables](images/UpdatedVariables.png)
+   ![Updated variables](images/UpdatedVariables.png)![](images/UpdatedVariables.png)
 
 1. Select the **Rule set** tab.
 1. Click **Add other**.
@@ -91,12 +102,23 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. For the action assignment, select **ASSIGN STATUS 'REVIEW'**.
 1. Click ![Save button](images/SaveButton.png) to save the rule set.
 
-***pic
+   ![Assign Status Review](images/AssignmentReview.png)
 
-***add common rule set
+1. Select **Add &#10132; Reference common rule set** to add a common rule set that has already been created.
 
+   ![Add reference common rule set](images/ReferenceCommonRuleSet.png)
 
-   ![Initial loan review - automatic approval](images/InitialLoanReview4.png)
+1. On the *Select Common Rule Sets* tab, check the common rule set **Automatic Loan Denial or Approval (Common)** and click **Next**.
+
+   ![Select Common Rule Sets](images/SelectCommonRuleSets.png)
+
+1. On the *Select Common Rule Set Versions* tab, click **Next**.
+1. On the *Map Inputs* tab, the inputs are auto-mapped since the same input variable names exist in both rule sets.  Click **Next**.
+1. On the *Map Outputs* tab, the inputs are auto-mapped since the same output variable names exist in both rule sets.  Click **Next**.
+1. On the *Order Rules* tab, click **Finish** to add the selected common rule set(s) to the current rule set.
+1. Expand the **Automatic Loan Denial or Approval (Common) (Latest Version)** rule to view its logic.
+
+   ![Initial loan review - automatic approval](images/InitialLoanReview4.png)![](images/InitialLoanReview4.png)
 
 1. Click ![Save button](images/SaveButton.png) to save the rule set.
 1. To test the rule set, select the **Scoring** tab.

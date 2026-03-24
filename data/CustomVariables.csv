@@ -1,0 +1,4 @@
+id,name,dataGridName,dataType,direction,length,generateDataGridColumns,description,defaultValue,dataGridMaxRowCount,autoPopulate,valueListId,valueListContentId,valueListName,associatedDataGridId,associatedDataGridName
+fd8e7dea-f5fe-47ac-a65c-166b99cc19c1,JUSTIFICATION,,string,output,50,false,"Justification for the Loan Status","UNDER REVIEW",,,,,,,
+b3ea8bc9-f766-4182-a246-497cbf898a14,OFFER_RATE,,decimal,output,,false,"Interest Rate to Offer with Loan Approval",,,,,,,,
+1ce249b8-b44d-43c3-b3a1-fe7d9fd01414,STATUS,,string,output,8,false,"Loan Status",,,,,,,,

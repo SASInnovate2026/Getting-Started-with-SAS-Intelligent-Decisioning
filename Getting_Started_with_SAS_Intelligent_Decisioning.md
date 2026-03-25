@@ -169,7 +169,9 @@ Select **No** when prompted about accepting *Admin* privileges.
     * Name: **Additional_Review**
     * Type: **DS2 Code File** (default selection)
     * Description: **Additional review for loan requests**
-    * Location: **/Public**
+    * Location: **/Public**.
+
+    > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to this folder in *SAS Content*.
 
      ![DS2 code 1 - settings](images/DS2Code1.png)
 
@@ -267,7 +269,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
      > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to this folder in *SAS Content*.
 
-      ![New Decision](images/NewDecision.png)
+      ![New Decision](images/NewDecision.png) ***updatepic
 
 1. Click **Save** to create the decision.
 1. On the *Start* node, select ![More options](images/MoreOptions.png) **&#10132; Add below &#10132; Rule set**.

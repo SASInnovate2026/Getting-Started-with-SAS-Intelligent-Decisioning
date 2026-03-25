@@ -46,7 +46,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. Enter the following information for the new rule set:
     * Name: **Initial_Loan_Review**
-    * Type: **Assignment**
+    * Type: **Assignment** (default selection)
     * Description: **Initial Loan Review Rule Set**
     * Location: **/Public**
 
@@ -250,7 +250,7 @@ Select **No** when prompted about accepting *Admin* privileges.
      > &#9998; It may take a few seconds for the test to complete.  You can select ![Refresh](images/Refresh.png) to refresh the test status.
 
 1. Once the test run is complete, select ![Result table](images/ResultTable.png) to view the test results.
-1. Review the results on the *Output* tab.
+1. Review the results on the **Output** tab.
 
     ![DS2 test output](images/DS2TestOutput.png)
 
@@ -269,7 +269,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
      > &#9755; Select ![Folder icon](images/FolderIcon.png) to navigate to this folder in *SAS Content*.
 
-      ![New Decision](images/NewDecision.png) ***updatepic
+      ![New Decision](images/NewDecision.png)
 
 1. Click **Save** to create the decision.
 1. On the *Start* node, select ![More options](images/MoreOptions.png) **&#10132; Add below &#10132; Rule set**.
@@ -327,17 +327,13 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Click **Save** to save this test to the rule set.
 1. Check the newly created test and click **Run** to run the specified test.
 1. Once the test run is complete, select ![Result table](images/ResultTable.png) to view the test results.
-1. Review the results on the *Output* tab.
+1. Review the results on the **Output** tab.
 1. Select **Actions &#10132; Explore and Visualize** to open the output table in *SAS Visual Analytics*.
-
-   ***update pic
 
    ![Decision test output](images/DecisionTestOutput.png)
 
 1. Double-click the **STATUS** category to add its values to the report template.
 1. Review the resulting bar chart.
-
-   ***update pic
 
    ![VA Report for Status](images/VAStatusBar.png)
 

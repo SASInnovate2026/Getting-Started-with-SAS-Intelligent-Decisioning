@@ -168,7 +168,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Enter the following information:
     * Name: **Additional_Review**
     * Type: **DS2 Code File** (default selection)
-    * Description: **Additional review for requests that have not been approved or denied**
+    * Description: **Additional review for loan requests**
     * Location: **/Public**
 
      ![DS2 code 1 - settings](images/DS2Code1.png)
@@ -211,14 +211,12 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. Click ![Save button](images/SaveButton.png) to save the code file.
 
-***update pic
-
-      ![Pasted DS2 Code](images/DS2CodePasted.png)
+   ![Pasted DS2 Code](images/DS2CodePasted.png)
 
 1. Click **Sync variables** to add the variables declared in the DS2 code to the *Variables* tab for for the code file.
 1. Select the **Variables** tab to confirm the variables were added.
 
-     ![DS2 Code Variables](images/DS2CodeVars.png)
+   ![DS2 Code Variables](images/DS2CodeVars.png)
 
 1. To test the code file, select the **Scoring** tab.
 1. On the **Tests** sub-tab, click **New Test**.
@@ -245,16 +243,14 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Click **Save** to save this test to the code file.
 1. Check the newly created test and click **Run** to run the specified test.
 
-     ![Select test](images/SelectTest.png)
+     ![Select Code Test](images/SelectCodeTest.png)
 
      > &#9998; It may take a few seconds for the test to complete.  You can select ![Refresh](images/Refresh.png) to refresh the test status.
 
 1. Once the test run is complete, select ![Result table](images/ResultTable.png) to view the test results.
 1. Review the results on the *Output* tab.
 
-***update pic
-
-   ![DS2 test output](images/DS2TestOutput.png)
+    ![DS2 test output](images/DS2TestOutput.png)
 
 1. Click **x** close the test.
 1. Click **x** to close the code file.

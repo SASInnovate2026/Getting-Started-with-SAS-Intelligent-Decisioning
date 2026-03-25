@@ -118,7 +118,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. On the *Order Rules* tab, click **Finish** to add the selected common rule set(s) to the current rule set.
 1. Expand the **Automatic Loan Denial or Approval (Common) (Latest Version)** rule to view its logic.
 
-   ![Initial loan review - automatic approval](images/InitialLoanReview4.png)![](images/InitialLoanReview4.png)
+   ![Initial loan review - automatic approval](images/InitialLoanReview4.png)
 
 1. Click ![Save button](images/SaveButton.png) to save the rule set.
 1. To test the rule set, select the **Scoring** tab.
@@ -328,14 +328,14 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Review the results on the *Output* tab.
 1. Select **Actions &#10132; Explore and Visualize** to open the output table in *SAS Visual Analytics*.
 
-***update pic
+   ***update pic
 
    ![Decision test output](images/DecisionTestOutput.png)
 
 1. Double-click the **STATUS** category to add its values to the report template.
 1. Review the resulting bar chart.
 
-***update pic
+   ***update pic
 
    ![VA Report for Status](images/VAStatusBar.png)
 

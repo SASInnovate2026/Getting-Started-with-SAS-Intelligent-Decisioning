@@ -324,7 +324,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![Test Decision](images/TestDecision.png)
 
-1. Click **Save** to save this test to the rule set.
+1. Click **Save** to save this test to the decision.
 1. Check the newly created test and click **Run** to run the specified test.
 1. Once the test run is complete, select ![Result table](images/ResultTable.png) to view the test results.
 1. Review the results on the **Output** tab.

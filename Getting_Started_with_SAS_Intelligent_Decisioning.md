@@ -289,6 +289,8 @@ Select **No** when prompted about accepting *Admin* privileges.
 
      ![Add missing variables](images/AddMissingVars.png)
 
+      > &#9998; There is a setting for *SAS Intelligent Decisioning* where you can select to automatically add missing variables to decision.
+
 1. Click **Add** to add all the missing variables to the decision.
 1. Click ![Save button](images/SaveButton.png) to save the decision.
 1. Select the **Variables** tab to review the added variables.
@@ -313,6 +315,8 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Select ![Error icon](images/ErrorIcon.png) on the right pane to confirm if the decision was validated successfully.
 
    ![Validated Successfully](images/ValidatedSuccess.png)
+
+      > &#9998; The validation step helps identify syntax errors before publishing a decision.
 
 1. To test the decision, select the **Scoring** tab.
 1. On the **Tests** sub-tab, click **New Test**.

@@ -1,7 +1,7 @@
 # Getting Started with SAS® Intelligent Decisioning
 Are you interested in using SAS Viya to automate your business decisions and drive real-time customer interactions, but don't know where to begin?
 
-In this hands-on workshop, you'll learn how to create a decision step-by-step. You will use the SAS Intelligent Decisioning interface to create rule sets and other decision elements, arrange decision objects in a workflow, and test completed decisions for accuracy.
+In this hands-on workshop, you'll learn how to create a decision flow step-by-step. You will use the SAS Intelligent Decisioning interface to create a rule set and other decision elements, arrange decision objects in a flow, and test the completed decision and its components for accuracy.
 
 ## Important Information
 The hands-on instructions in these pages are specific to the SAS Innovate workshop and should not be considered a replacement for the official SAS Documentation. Some parts of these instructions will only work correctly in the Lab environments provided by SAS Education.
@@ -14,7 +14,7 @@ If you decide to run anything found on this site in your own SAS environment you
 
 ## Session Information
 Estimated Duration: 45 minutes of content and exercises.<br>
-SAS Viya Cadence: 2025.12 Stable​.
+SAS Viya Cadence: 2025.12 Stable (December 2025)​.
 
 ## Thank You
 Thank you for attending this session. Please leave feedback at the end.

@@ -289,7 +289,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
      ![Add missing variables](images/AddMissingVars.png)
 
-      > &#9998; There is a setting for *SAS Intelligent Decisioning* where you can select to automatically add missing variables to decision.
+      > &#9998; There is a user setting for *SAS Intelligent Decisioning* where you can select to automatically add missing variables to a decision if that is your preference.
 
 1. Click **Add** to add all the missing variables to the decision.
 1. Click ![Save button](images/SaveButton.png) to save the decision.
